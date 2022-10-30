@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* CSS / SETORES PESONALIZADOS
+
+
+        . = class
+        # = id
+        : = pseudo-class
+        :: = pseudo-element
+        > = clildren
+        
+        
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: brown;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: rgb(204, 123, 123);
+        }
+
+        .especial{
+            background-color: rgba(194, 153, 153, 0.473);
+        }
+
+        .especial::after{
+            content: '<';
+        }
+
+        .especial::before{
+            content: '>';
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p>personalizando links</p>
+    <li><a href="https://youtu.be/vMlrcOVr7po">video no youtube</a></li>
+
+    <li><a href="https://www.daz3d.com/get_studio/?utm_source=google&utm_medium=cpc&utm_campaign=&utm_content=&utm_term=&utm_matchtype=&utm_creative=&gclid=Cj0KCQjwyt-ZBhCNARIsAKH1174Lv1NXRF_zb9dzBebwAOc1u_kxgUpJahV1UuAByBg1FqDvF6ksA8gaAo7IEALw_wcB" class="especial">daz10</a></li>
+
+    <li><a href="https://www.hostnet.com.br/">hospedagem</a></li>
+
+</body>
+</html>
